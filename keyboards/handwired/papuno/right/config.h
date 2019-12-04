@@ -1,12 +1,12 @@
 #pragma once
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xA010
-#define PRODUCT_ID      0x1234
+#define VENDOR_ID       0xFEED
+#define PRODUCT_ID      0xBABE
 #define DEVICE_VER      0x0100
-#define MANUFACTURER    Alexp
-#define PRODUCT         Dactyl Keyboard
-#define DESCRIPTION     Split ergonomic keyboard
+#define MANUFACTURER    pap.uno
+#define PRODUCT         Dactyl wireless pap.uno keyboard
+#define DESCRIPTION     Split wireless ergonomic keyboard
 
 /* key matrix size */
 // Rows are doubled-up
@@ -37,8 +37,6 @@
 #define LOCKING_RESYNC_ENABLE
 
 // EEPROM usage
-
-// TODO: refactor with new user EEPROM code (coming soon)
 #define EEPROM_MAGIC 0x451F
 #define EEPROM_MAGIC_ADDR 34
 // Bump this every time we change what we store

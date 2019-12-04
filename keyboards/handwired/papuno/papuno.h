@@ -1,7 +1,7 @@
 #pragma once
 
-#ifdef KEYBOARD_alexp_dactyl_rev1
-    #include "rev1.h"
+#ifdef KEYBOARD_handwired_papuno_right
+    #include "right.h"
 #endif
 
 #include "quantum.h"
