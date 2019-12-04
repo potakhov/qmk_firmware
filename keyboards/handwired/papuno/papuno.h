@@ -2,6 +2,8 @@
 
 #ifdef KEYBOARD_handwired_papuno_right
     #include "right.h"
+#elif KEYBOARD_handwired_papuno_left
+    #include "left.h"
 #endif
 
 #include "quantum.h"
