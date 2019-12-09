@@ -31,9 +31,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      TBSH,  A,   S,   D,   F,   G,                  H,   J,   K,   L, SCLN, ENT,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     LSFT,  Z,   X,   C,   V,   B, LALT,     RGUI,  N,   M, COMM, DOT,SLSH,RSFT,
+     LSFT,  Z,   X,   C,   V,   B,  ESC,     RGUI,  N,   M, COMM, DOT,SLSH,RSFT,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
-                       LCTL, ESC, SPC,        LUPR, BSPC,CTEQ
+                       LCTL, LALT, SPC,        LUPR, BSPC,CTEQ
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -42,13 +42,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      GGRV, F1,  F2,  F3,  F4,  F5,                 F6,  F7,  F8,  F9, F10, BSPC,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-         ,GUIQ,GUIW,    ,PGUP,GUIT,                   ,HOME, UP, END, PSCR,PAUS,
+     GITB,GUIQ,GUIW,    ,PGUP,GUIT,                   ,HOME, UP, END, PSCR,PAUS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     GITB,GUIA,GUIS,    ,PGDN,    ,                   ,LEFT,DOWN,RGHT,QUOT,    ,
+      TAB,GUIA,GUIS,    ,PGDN,    ,                   ,LEFT,DOWN,RGHT,QUOT,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     LSFT,GUIZ,GUIX,GUIC,GUIV,    ,    ,     RGUI,    ,    ,LBRC,RBRC,    ,RSFT,
+     LSFT,GUIZ,GUIX,GUIC,GUIV,    , GRV,     RGUI,    ,    ,LBRC,RBRC,    ,RSFT,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
-                       LCTL, GRV,GISP,            ,     ,
+                       LCTL,    ,GISP,            ,     ,
   //                  `----+----+----'        `----+----+----'
   ),
 
