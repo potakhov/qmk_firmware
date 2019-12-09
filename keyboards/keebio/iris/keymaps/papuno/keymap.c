@@ -4,7 +4,7 @@
 #define KC_LGRV      LT(2,KC_GRV)
 #define KC_TBSH      LSFT_T(KC_TAB)
 #define KC_ALSP      LALT_T(KC_SPC)
-#define KC_LUPR      MT(1)
+#define KC_LUPR      MO(1)
 #define KC_CTEQ      LCTL_T(KC_EQL)
 #define KC_GUIQ      LGUI(KC_Q)
 #define KC_GUIS      LGUI(KC_S)
