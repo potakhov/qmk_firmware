@@ -13,4 +13,4 @@
 #define NO_ACTION_MACRO
 
 #undef PRODUCT
-#define PRODUCT         "Keebio PAP.UNO Iris 1.1.0"
+#define PRODUCT         "Keebio PAP.UNO Iris 1.1.1"

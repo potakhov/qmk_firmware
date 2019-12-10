@@ -23,6 +23,7 @@
 #define KC_MWIN      MAGIC_SWAP_CTL_GUI
 #define KC_SLBR      LSFT(KC_LBRC)
 #define KC_SRBR      LSFT(KC_RBRC)
+#define KC_SSCL      LSFT(KC_SCLN)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -47,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      GITB,GUIQ,GUIW,    ,PGUP,GUIT,                EQL,HOME, UP, END, PSCR,PAUS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-      TAB,GUIA,GUIS,    ,PGDN,    ,               SFQU,LEFT,DOWN,RGHT,QUOT,    ,
+      TAB,GUIA,GUIS,    ,PGDN,SSCL,               SFQU,LEFT,DOWN,RGHT,QUOT,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      LSFT,GUIZ,GUIX,GUIC,GUIV,    , GRV,     RGUI,SLBR,SRBR,LBRC,RBRC,    ,RSFT,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
