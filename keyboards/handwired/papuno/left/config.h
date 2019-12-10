@@ -2,10 +2,10 @@
 
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0xBABE
+#define PRODUCT_ID      0xBEEF
 #define DEVICE_VER      0x0100
 #define MANUFACTURER    pap.uno
-#define PRODUCT         Wireless pap.uno keyboard
+#define PRODUCT         Wireless pap.uno keyboard left
 #define DESCRIPTION     Split wireless ergonomic keyboard
 
 /* key matrix size */
