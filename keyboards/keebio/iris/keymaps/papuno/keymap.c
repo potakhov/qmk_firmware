@@ -5,7 +5,6 @@
 #define KC_TBSH      LSFT_T(KC_TAB)
 #define KC_ALSP      LALT_T(KC_SPC)
 #define KC_LUPR      MO(1)
-#define KC_CTEQ      LCTL_T(KC_EQL)
 #define KC_GUES      LGUI_T(KC_ESC)
 #define KC_GUIQ      LGUI(KC_Q)
 #define KC_GUIS      LGUI(KC_S)
@@ -37,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      LSFT,  Z,   X,   C,   V,   B, GUES,     RGUI,  N,   M, COMM, DOT,SLSH,RSFT,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
-                       LCTL, ALSP, SPC,        LUPR, BSPC,CTEQ
+                       LCTL, ALSP, SPC,        LUPR, BSPC,RCTL
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -46,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      GGRV, F1,  F2,  F3,  F4,  F5,                 F6,  F7,  F8,  F9, F10, BSPC,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-     GITB,GUIQ,GUIW,    ,PGUP,GUIT,                   ,HOME, UP, END, PSCR,PAUS,
+     GITB,GUIQ,GUIW,    ,PGUP,GUIT,                EQL,HOME, UP, END, PSCR,PAUS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
       TAB,GUIA,GUIS,    ,PGDN,    ,               SFQU,LEFT,DOWN,RGHT,QUOT,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
