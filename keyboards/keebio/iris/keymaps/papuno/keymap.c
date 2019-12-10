@@ -22,6 +22,8 @@
 #define KC_SFQU      LSFT(KC_QUOT)
 #define KC_MOSX      MAGIC_UNSWAP_CTL_GUI
 #define KC_MWIN      MAGIC_SWAP_CTL_GUI
+#define KC_SLBR      LSFT(KC_LBRC)
+#define KC_SRBR      LSFT(KC_RBRC)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -35,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
      LSFT,  Z,   X,   C,   V,   B, GUES,     RGUI,  N,   M, COMM, DOT,SLSH,RSFT,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
-                       LCTL, LALT, SPC,        LUPR, BSPC,CTEQ
+                       LCTL, ALSP, SPC,        LUPR, BSPC,CTEQ
   //                  `----+----+----'        `----+----+----'
   ),
 
@@ -48,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
       TAB,GUIA,GUIS,    ,PGDN,    ,               SFQU,LEFT,DOWN,RGHT,QUOT,    ,
   //|----+----+----+----+----+----+----.    ,----|----+----+----+----+----+----|
-     LSFT,GUIZ,GUIX,GUIC,GUIV,    , GRV,     RGUI,    ,    ,LBRC,RBRC,    ,RSFT,
+     LSFT,GUIZ,GUIX,GUIC,GUIV,    , GRV,     RGUI,SLBR,SRBR,LBRC,RBRC,    ,RSFT,
   //`----+----+----+----+----+----+----/    \----+----+----+----+----+----+----'
                        LCTL,    ,GISP,            ,     ,
   //                  `----+----+----'        `----+----+----'
