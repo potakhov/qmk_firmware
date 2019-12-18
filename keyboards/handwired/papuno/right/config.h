@@ -44,3 +44,6 @@
 // and avoid loading invalid data from the EEPROM
 #define EEPROM_VERSION 0x08
 #define EEPROM_VERSION_ADDR 36
+
+#define BACKLIGHT_PIN B5
+#define BACKLIGHT_LEVELS 5
