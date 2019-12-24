@@ -24,6 +24,7 @@
 #define KC_SLBR      LSFT(KC_LBRC)
 #define KC_SRBR      LSFT(KC_RBRC)
 #define KC_SSCL      LSFT(KC_SCLN)
+#define KC_TGBL      BL_TOGG
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_kc(
@@ -38,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //`----+----+----+----+----+----|              |----+----+----+----+----+----'
           SLBR,SRBR,LCTL,ALSP,GUES,               RGUI, ENT,RCTL,LBRC,RBRC,
   //`----+----+----+----+----+----|              |----+----+----+----+----+----'
-                         LUPR, SPC,               LUPR,BSPC
+                         LUPR, SPC,               TGBL,BSPC
   //`----+----+----+----+----+----|              |----+----+----+----+----+----'
   )
 };
