@@ -58,6 +58,11 @@ __attribute__((weak)) bool is_keyboard_left(void) {
 }
 
 __attribute__((weak)) bool is_keyboard_master(void) {
+#if defined(HARDCODE_SLAVE_MODE)
+    return false;
+#elif defined(HARDCODE_MASTER_MODE)
+    return true;
+#else
     static enum { UNKNOWN, MASTER, SLAVE } usbstate = UNKNOWN;
 
     // only check once, as this is called often
@@ -75,6 +80,7 @@ __attribute__((weak)) bool is_keyboard_master(void) {
     }
 
     return (usbstate == MASTER);
+#endif
 }
 
 static void keyboard_master_setup(void) {
