@@ -44,6 +44,11 @@ bool waitForUsb(void) {
 }
 
 __attribute__((weak)) bool is_keyboard_left(void) {
+#if defined(HARDCODE_LEFT_SIDE)
+    return true;
+#elif defined(HARDCODE_RIGHT_SIDE)
+    return false;
+#else
 #if defined(SPLIT_HAND_PIN)
     // Test pin SPLIT_HAND_PIN for High/Low, if low it's right hand
     setPinInput(SPLIT_HAND_PIN);
@@ -55,6 +60,7 @@ __attribute__((weak)) bool is_keyboard_left(void) {
 #endif
 
     return is_keyboard_master();
+#endif
 }
 
 __attribute__((weak)) bool is_keyboard_master(void) {

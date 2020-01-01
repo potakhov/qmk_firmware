@@ -5,7 +5,7 @@
 #define PRODUCT_ID      0xBEEF
 #define DEVICE_VER      0x0100
 #define MANUFACTURER    pap.uno
-#define PRODUCT         Wireless pap.uno keyboard left
+#define PRODUCT         PAP.UNO Dactyl left 0.2
 #define DESCRIPTION     Split wireless ergonomic keyboard
 
 /* key matrix size */
@@ -49,3 +49,4 @@
 #define BACKLIGHT_LEVELS 5
 
 #define HARDCODE_SLAVE_MODE
+#define HARDCODE_LEFT_SIDE
