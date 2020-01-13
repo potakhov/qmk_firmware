@@ -28,6 +28,8 @@
 #define KC_TGBL      BL_TOGG
 #define KC_STBL      BL_STEP
 #define KC_RST       RESET
+#define KC_USB       OUT_USB
+#define KC_BT        OUT_BT
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_kc(
@@ -64,7 +66,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [2] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-         ,MOSX,MWIN,    ,    ,    ,                   ,    ,    ,    ,    ,    ,
+         ,MOSX,MWIN, USB,  BT,    ,                   ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
          ,    ,    ,    ,    ,    ,                   ,    ,    ,    ,    ,    ,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|

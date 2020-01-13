@@ -5,7 +5,7 @@
 #define PRODUCT_ID      0xBABE
 #define DEVICE_VER      0x0100
 #define MANUFACTURER    pap.uno
-#define PRODUCT         PAP.UNO Dactyl 0.7
+#define PRODUCT         PAP.UNO Dactyl 0.8
 #define DESCRIPTION     Split wireless ergonomic keyboard
 
 /* key matrix size */
