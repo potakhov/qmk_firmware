@@ -21,8 +21,13 @@
 #define KC_TGBL      BL_TOGG
 #define KC_STBL      BL_STEP
 #define KC_RST       RESET
+#ifdef HARDCODE_RIGHT_SIDE
 #define KC_USB       OUT_USB
 #define KC_BT        OUT_BT
+#else
+#define KC_USB       KC_TRNS
+#define KC_BT        KC_TRNS
+#endif
 #define KC_GUEN      LGUI_T(KC_ENT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
