@@ -1,7 +1,7 @@
 #include QMK_KEYBOARD_H
 
 #define KC_          KC_TRNS
-#define KC_LGRV      LT(2,KC_GRV)
+#define KC_LESC      LT(2,KC_ESC)
 #define KC_LUPR      MO(1)
 #define KC_GUIQ      LGUI(KC_Q)
 #define KC_GUIS      LGUI(KC_S)
@@ -23,21 +23,22 @@
 #define KC_RST       RESET
 #define KC_USB       OUT_USB
 #define KC_BT        OUT_BT
+#define KC_GUEN      LGUI_T(KC_ENT)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_kc(
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
-     LGRV,  1,   2,   3,   4,   5,                  6,   7,   8,   9,   0, MINS,
+     LESC,  1,   2,   3,   4,   5,                  6,   7,   8,   9,   0, MINS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-      TAB,  Q,   W,   E,   R,   T,                  Y,   U,   I,   O,   P, BSLS,
+      GRV,  Q,   W,   E,   R,   T,                  Y,   U,   I,   O,   P, BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
       TAB,  A,   S,   D,   F,   G,                  H,   J,   K,   L, SCLN,QUOT,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
      LSFT,  Z,   X,   C,   V,   B,                  N,   M, COMM, DOT,SLSH,SFTENT,
   //`----+----+----+----+----+----|              |----+----+----+----+----+----'
-          SEQL, EQL, ESC,LUPR, SPC,               BSPC,LUPR, ENT,LBRC,RBRC,
+          SEQL, EQL, ESC,LUPR, SPC,               BSPC,LUPR,GUEN,LBRC,RBRC,
   //`----+----+----+----+----+----|              |----+----+----+----+----+----'
-                         LALT,LGUI,               RGUI,RCTL
+                         LALT,LGUI,               RCTL,RALT
   //`----+----+----+----+----+----|              |----+----+----+----+----+----'
   ),
 
