@@ -1,7 +1,7 @@
 #include QMK_KEYBOARD_H
 
 #define KC_          KC_TRNS
-#define KC_LESC      LT(2,KC_ESC)
+#define KC_LESC      LT(2,KC_GRV)
 #define KC_LUPR      MO(1)
 #define KC_GUIQ      LGUI(KC_Q)
 #define KC_GUIS      LGUI(KC_S)
@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,----+----+----+----+----+----.              ,----+----+----+----+----+----.
      LESC,  1,   2,   3,   4,   5,                  6,   7,   8,   9,   0, MINS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
-      GRV,  Q,   W,   E,   R,   T,                  Y,   U,   I,   O,   P, BSLS,
+      ESC,  Q,   W,   E,   R,   T,                  Y,   U,   I,   O,   P, BSLS,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
       TAB,  A,   S,   D,   F,   G,                  H,   J,   K,   L, SCLN,QUOT,
   //|----+----+----+----+----+----|              |----+----+----+----+----+----|
